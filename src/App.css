@@ -1,5 +1,16 @@
+:root {
+  --bg-color1: #d0e8d0;
+  --bg-color2: #f1e1c5;
+  --font-color: black;
+  --font-color-hover: white;
+}
+
+/* default */
 .App {
   text-align: center;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
 }
 
 .App-logo {
@@ -22,10 +33,6 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
 }
 
 @keyframes App-logo-spin {
