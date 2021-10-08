@@ -1,5 +1,6 @@
 import React from "react";
 import "./navbar.css";
+import SearchBar from "../search-bar/SearchBar";
 
 class Navbar extends React.Component {
   render() {
@@ -37,6 +38,9 @@ class Navbar extends React.Component {
               Nails
             </a>
           </li>
+          {/* <li className="">
+            <SearchBar />
+          </li> */}
           <li>
             <button
               className="nav-link nav-right btn btn-outline-dark mr-2"

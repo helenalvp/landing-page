@@ -1,6 +1,10 @@
-# Getting Started with Create React App
+# Getting Started with beauty
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+This is currently an unfinished beauty landing page. I plan on coming back and working on this later, when i have a clearer direction of where I want to go with this and it's infrastructure.
+
+isnpired by https://www.lapa.ninja/post/nibelu/
 
 ## Available Scripts
 

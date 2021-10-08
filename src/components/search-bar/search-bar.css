@@ -1,0 +1,10 @@
+.search-bar input {
+  width: 100%;
+  border: hidden;
+  border-radius: 50px;
+  margin-right: -40px;
+}
+
+.search-bar input:focus {
+  outline: none;
+}

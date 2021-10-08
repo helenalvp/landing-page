@@ -1,97 +1,45 @@
 import React from "react";
-import makeup from "../../../../assets/icons/make-up.png";
+// import makeup from "../../../../assets/icons/make-up.png";
+import "./products.css";
+
+import Carousel, {
+  slidesToShowPlugin,
+  autoplayPlugin,
+} from "@brainhubeu/react-carousel";
+import "@brainhubeu/react-carousel/lib/style.css";
+
+const placeholder = "http://via.placeholder.com/640x360";
 
 class Products extends React.Component {
   render() {
     return (
       <div className="product-section pb-5 mb-5">
-        <h1>Shop Our Products</h1>
-        <div className="items">
-          <div
-            id="carouselExampleControls"
-            className="carousel slide carousel-dark"
-            data-bs-ride="carousel"
+        <h1 className="m-5 p-5">Shop Our Products</h1>
+        <div className="items  px-5 mx-5">
+          <Carousel
+            plugins={[
+              "infinite",
+              "arrows",
+              {
+                resolve: slidesToShowPlugin,
+                options: {
+                  numberOfSlides: 2,
+                },
+              },
+              {
+                resolve: autoplayPlugin,
+                options: {
+                  interval: 2000,
+                },
+              },
+            ]}
+            className="px-3"
           >
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img
-                  src={makeup}
-                  className="icon"
-                  alt="Beauty product goes here"
-                />
-                <img
-                  src={makeup}
-                  className="icon"
-                  alt="Beauty product goes here"
-                />
-                <img
-                  src={makeup}
-                  className="icon"
-                  alt="Beauty product goes here"
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src={makeup}
-                  className="icon"
-                  alt="Beauty product goes here"
-                />
-                <img
-                  src={makeup}
-                  className="icon"
-                  alt="Beauty product goes here"
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src={makeup}
-                  className="icon"
-                  alt="Beauty product goes here"
-                />
-                <img
-                  src={makeup}
-                  className="icon"
-                  alt="Beauty product goes here"
-                />
-                <img
-                  src={makeup}
-                  className="icon"
-                  alt="Beauty product goes here"
-                />
-                <img
-                  src={makeup}
-                  className="icon"
-                  alt="Beauty product goes here"
-                />
-              </div>
-            </div>
-            <a
-              class="carousel-control-prev"
-              href="#carouselExampleControls"
-              role="button"
-              data-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a
-              class="carousel-control-next"
-              href="#carouselExampleControls"
-              role="button"
-              data-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="sr-only">Next</span>
-            </a>
-          </div>
+            <img src={placeholder} alt="placeholder" />
+            <img src={placeholder} alt="placeholder" />
+            <img src={placeholder} alt="placeholder" />
+          </Carousel>
         </div>
-        Needs alot more work
       </div>
     );
   }

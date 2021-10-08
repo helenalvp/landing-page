@@ -5,7 +5,8 @@ class ActionSection extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <div class="custom-shape-divider-bottom-1633102626">
+        {/* top wave */}
+        <div class="top-wave-action-section">
           <svg
             data-name="Layer 1"
             xmlns="http://www.w3.org/2000/svg"
@@ -28,12 +29,33 @@ class ActionSection extends React.Component {
             ></path>
           </svg>
         </div>
-        <div className="action">
-          {/* this is the Top wave */}
-
-          {/* info */}
+        <div className="action ">
+          <div className="row d-flex">
+            <div className="col-6">
+              <img
+                src="https://www.fillmurray.com/640/360"
+                className="mt-5"
+                alt="muray"
+              />
+            </div>
+            <div className="col-6 d-flex align-items-center px-5">
+              {/* insert text here.... */}
+              <div className="px-5 mx-5">
+                <h1>Insert Action Title Here</h1>
+                <p className="pt-3 action-text">
+                  Here lies the text for the action action title, prompting you
+                  to want to click the title. Here lies the text for the action
+                  action title, prompting you to want to click the title
+                </p>
+                <button type="button" class="btn btn-outline-dark btn-lg col-3">
+                  View Products
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="custom-shape-divider-top-1633631540">
+        {/* bottom wave */}
+        <div class="bottom-wave-action-section">
           <svg
             data-name="Layer 1"
             xmlns="http://www.w3.org/2000/svg"

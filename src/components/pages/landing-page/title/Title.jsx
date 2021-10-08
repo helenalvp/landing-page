@@ -1,17 +1,19 @@
 import React from "react";
 import "./title.css";
 import beauty from "../../../../assets/icons/beauty.png";
+import SearchBar from "../../../search-bar/SearchBar";
 
 class Title extends React.Component {
   render() {
     return (
       <div className="title-section">
+        <SearchBar />
         <div className="main-section">
           <div className="row">
             <div className="col-1"></div>
             <div className="col-5 slogan-section">
               <div className="row d-flex justify-content-start">
-                <h1 className="main-slogan text-left">
+                <h1 className="main-slogan text-left mt-5 pt-5">
                   Cool Simple Title Goes Here
                 </h1>
                 <p className="main-desc col-8 text-left">
@@ -25,7 +27,7 @@ class Title extends React.Component {
                 <div className="col-12 d-flex justify-content-start pt-2 mt-2"></div>
               </div>
             </div>
-            <div className="col-5 d-flex align-items-center">
+            <div className="col-5 d-flex align-items-center mt-5">
               <img
                 src={beauty}
                 class="img-fluid main-img"
